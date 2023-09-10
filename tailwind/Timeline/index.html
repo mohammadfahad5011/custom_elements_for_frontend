@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/aos.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "13px",
+              sm: "15px",
+              lg: "15px",
+              xl: "24px",
+            },
+            screens: {
+              sm: "600px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+            },
+          },
+          extend: {
+            colors: {
+              bgColor: "#FFFCF9",
+              cOrange: "#FFF7ED",
+              cWhite: "#ffffff",
+              cYellow: "#FEF08A",
+              cYellowFade: "#FEF9C3",
+              cPurple: "#8B5CF6",
+              cBgPurple: "#F5F3FF",
+              cBlack: "#171717",
+              cGray: "#737373",
+              cGrayFade: "#525252",
+              cTeal: "#F0FDFA",
+            },
+            backgroundSize: {
+              "size-200": "200% 200%",
+            },
+            backgroundPosition: {
+              "pos-0": "0% 0%",
+              "pos-100": "100% 100%",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          font-family: "Outfit", sans-serif;
+        }
+        .bg-100 {
+          background-size: 100% 100%;
+        }
+
+        .accordion-content {
+          transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+      }
+    </style>
+
+    <title>Timeline</title>
+  </head>
+
+  <!-- =======------Timeline-----======  -->
+
+  <div class="container">
+    <!-- --timeline--  -->
+    <div
+      class="relative after:absolute after:top-0 after:left-8 lg:after:left-1/2 after:-z-0 after:w-1 after:h-full after:bg-white p-0 lg:p-4 bg-black"
+    >
+      <!-- --single_timeline--left  -->
+      <div
+        class="pl-[15%] pr-[5%] py-3 lg:px-12 w-full lg:w-1/2 bg-red-300 relative"
+      >
+        <!-- --timeline-number--for largre screen  -->
+        <div
+          class="hidden absolute w-12 h-12 lg:flex justify-center items-center rounded-full lg:-right-6 bg-white z-10"
+        >
+          1
+        </div>
+        <!-- --timeline-number--for small screen  -->
+        <div
+          class="lg:hidden absolute w-12 h-12 flex justify-center items-center rounded-full left-3 lg:-left-6 bg-white z-10"
+        >
+          1
+        </div>
+        <!-- --single_timeline-content--  -->
+        <div class="relative px-5 py-7 rounded-[8px] bg-white">
+          <h2 class="font-bold text-2xl">Some heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+            adipisci laboriosam facere. Dicta architecto libero fuga nesciunt
+            optio eos eveniet!
+          </p>
+          <!-- --timeline-arrow--  -->
+
+          <span
+            class="absolute top-3 right-4 h-0 w-0 border b-t-solid b-t-[15px] border-t-[transparent] b-b-[15px] b-b-solid border-b-[transparent] b-r-[15px] b-r-solid border-r-[red]"
+          ></span>
+        </div>
+      </div>
+
+      <!-- --single_timeline--right  -->
+      <div
+        class="left-0 lg:left-1/2 pl-[15%] pr-[5%] py-3 lg:px-12 w-full lg:w-1/2 bg-red-300 relative"
+      >
+        <!-- --timeline-number--  -->
+        <div
+          class="absolute w-12 h-12 flex justify-center items-center rounded-full left-3 lg:-left-6 bg-white z-10"
+        >
+          2
+        </div>
+        <!-- --single_timeline-content--  -->
+        <div class="relative px-5 py-7 rounded-[8px] bg-white">
+          <h2 class="font-bold text-2xl">Some heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+            adipisci laboriosam facere. Dicta architecto libero fuga nesciunt
+            optio eos eveniet!
+          </p>
+          <!-- --timeline-arrow--  -->
+          <span class=""></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

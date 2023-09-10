@@ -1,0 +1,34 @@
+@media (min-width: 320px) and (max-width: 1200px) {
+  .testimonial-profile-thumb {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+  }
+
+  .testimonial-profile-content h5 {
+    font-size: 16px;
+    margin-bottom: 1px;
+  }
+
+  .testimonial-profile-content p {
+    font-size: 13px;
+    line-height: 1.1;
+    padding-top: 3px;
+  }
+
+  .testimonial-slide-header-right {
+    padding-left: 6px;
+  }
+
+  .testimonial-slide {
+    padding: 15px 19px;
+  }
+
+  .testimonial-slide-body {
+    font-size: 15px;
+  }
+
+  .owl-nav {
+    top: -105px;
+  }
+}
